@@ -4,7 +4,7 @@ import { SiCodeforces, SiLeetcode } from 'react-icons/si'
 
 const LeftSection = () => {
     return (
-        <div className="flex-1 sticky top-0 h-[100vh] py-[80px]">
+        <div className="flex-1 sticky top-0 h-[100vh] py-[100px]">
             <div className="h-full w-full flex flex-col justify-between items-start">
                 {/* top heading section */}
                 <div className="flex flex-col justify-center items-start">
@@ -14,26 +14,26 @@ const LeftSection = () => {
                 </div>
                 {/* middle navigation section */}
                 <div className="flex flex-col justify-center items-start gap-4">
-                    <div className="flex flex-row justify-center items-center gap-4">
-                        <span className="w-16 h-[1.5px] bg-[#E2E8F0]"></span>
-                        <span className="text-[12px] font-bold text-slate-200 tracking-widest">ABOUT</span>
+                    <div className="flex flex-row justify-center items-center gap-4 cursor-pointer group">
+                        <span className="w-8 h-[2px] bg-[#64748B] group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]"></span>
+                        <span className="text-[12px] font-bold text-slate-400 tracking-widest group-hover:text-slate-200 group-focus:text-slate-200">ABOUT</span>
                     </div>
-                    <div className="flex flex-row justify-center items-center gap-4">
-                        <span className="w-8 h-[1.5px] bg-[#64748B]"></span>
-                        <span className="text-[12px] font-bold text-slate-400 tracking-widest">EXPERIENCE</span>
+                    <div className="flex flex-row justify-center items-center gap-4 cursor-pointer group">
+                        <span className="w-8 h-[2px] bg-[#64748B] group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]"></span>
+                        <span className="text-[12px] font-bold text-slate-400 tracking-widest group-hover:text-slate-200 group-focus:text-slate-200">EXPERIENCE</span>
                     </div>
-                    <div className="flex flex-row justify-center items-center gap-4">
-                        <span className="w-8 h-[1.5px] bg-[#64748B]"></span>
-                        <span className="text-[12px] font-bold text-slate-400 tracking-widest">PROJECTS</span>
+                    <div className="flex flex-row justify-center items-center gap-4 cursor-pointer group">
+                        <span className="w-8 h-[2px] bg-[#64748B] group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]"></span>
+                        <span className="text-[12px] font-bold text-slate-400 tracking-widest group-hover:text-slate-200 group-focus:text-slate-200">PROJECTS</span>
                     </div>
                 </div>
                 {/* bottom social section */}
                 <div className='flex gap-5 justify-center items-center'>
-                    <AiOutlineTwitter className='cursor-pointer text-[#64748B]'  size={28} />
-                    <AiFillGithub className='cursor-pointer text-[#64748B]'  size={28} />
-                    <AiFillLinkedin className='cursor-pointer text-[#64748B]'  size={28} />
-                    <SiLeetcode className='cursor-pointer text-[#64748B]'  size={28} />
-                    <SiCodeforces className='cursor-pointer text-[#64748B]'  size={28} />
+                    <AiOutlineTwitter className='cursor-pointer text-[#64748B] hover:text-[#E2E8F0]' size={28} />
+                    <AiFillGithub className='cursor-pointer text-[#64748B] hover:text-[#E2E8F0]' size={28} />
+                    <AiFillLinkedin className='cursor-pointer text-[#64748B] hover:text-[#E2E8F0]' size={28} />
+                    <SiLeetcode className='cursor-pointer text-[#64748B] hover:text-[#E2E8F0]' size={28} />
+                    <SiCodeforces className='cursor-pointer text-[#64748B] hover:text-[#E2E8F0]' size={28} />
                 </div>
             </div>
         </div>
