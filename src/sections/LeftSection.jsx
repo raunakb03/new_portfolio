@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai'
 import { SiCodeforces, SiLeetcode } from 'react-icons/si'
 
 
-const LeftSection = () => {
+const LeftSection = ({activeSection}) => {
+
     return (
         <div className="flex-1 sticky top-0 h-[100vh] py-[100px]">
             <div className="h-full w-full flex flex-col justify-between items-start">
@@ -15,16 +17,16 @@ const LeftSection = () => {
                 {/* middle navigation section */}
                 <div className="flex flex-col justify-center items-start gap-4">
                     <div className="flex flex-row justify-center items-center gap-4 cursor-pointer group">
-                        <span className="w-8 h-[2px] bg-[#64748B] group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]"></span>
-                        <span className="text-[12px] font-bold text-slate-400 tracking-widest group-hover:text-slate-200 group-focus:text-slate-200">ABOUT</span>
+                        <span className={`h-[2px] ${activeSection==='about-section'?"bg-[#E2E8F0] w-16":"bg-[#64748B] w-8"} group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]`}></span>
+                        <span className={`text-[12px] font-bold ${activeSection==='about-section'?"text-slate-200":"text-slate-400"} tracking-widest group-hover:text-slate-200 group-focus:text-slate-200`}>ABOUT</span>
                     </div>
                     <div className="flex flex-row justify-center items-center gap-4 cursor-pointer group">
-                        <span className="w-8 h-[2px] bg-[#64748B] group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]"></span>
-                        <span className="text-[12px] font-bold text-slate-400 tracking-widest group-hover:text-slate-200 group-focus:text-slate-200">EXPERIENCE</span>
+                        <span className={`h-[2px] ${activeSection==='skills-section'?"bg-[#E2E8F0] w-16":"bg-[#64748B] w-8"} group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]`}></span>
+                        <span className={`text-[12px] font-bold ${activeSection==='skills-section'?"text-slate-200":"text-slate-400"} tracking-widest group-hover:text-slate-200 group-focus:text-slate-200`}>SKILLS</span>
                     </div>
                     <div className="flex flex-row justify-center items-center gap-4 cursor-pointer group">
-                        <span className="w-8 h-[2px] bg-[#64748B] group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]"></span>
-                        <span className="text-[12px] font-bold text-slate-400 tracking-widest group-hover:text-slate-200 group-focus:text-slate-200">PROJECTS</span>
+                        <span className={`h-[2px] ${activeSection==='projects-section'?"bg-[#E2E8F0] w-16":"bg-[#64748B] w-8"} group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]`}></span>
+                        <span className={`text-[12px] font-bold ${activeSection==='projects-section'?"text-slate-200":"text-slate-400"} tracking-widest group-hover:text-slate-200 group-focus:text-slate-200`}>PROJECTS</span>
                     </div>
                 </div>
                 {/* bottom social section */}
