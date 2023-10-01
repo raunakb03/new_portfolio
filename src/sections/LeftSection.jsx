@@ -8,9 +8,9 @@ const LeftSection = () => {
             <div className="h-full w-full flex flex-col justify-between items-start">
                 {/* top heading section */}
                 <div className="flex flex-col justify-center items-start">
-                    <div className="text-6xl text-slate-200 font-bold mb-2">Raunak Bhalotia</div>
+                    <div className="text-5xl text-slate-200 font-bold mb-2">Raunak Bhalotia</div>
                     <div className="text-2xl text-slate-200 font-medium mb-4">Lead Engineer at Upstatement</div>
-                    <div className="text-lg text-slate-400">I build accessible, inclusive products and digital experiences for the web.</div>
+                    <div className="text-lg text-slate-400 w-[70%]">I build accessible, inclusive products and digital experiences for the web.</div>
                 </div>
                 {/* middle navigation section */}
                 <div className="flex flex-col justify-center items-start gap-4">

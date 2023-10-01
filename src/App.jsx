@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import './app.css'
 import LeftSection from './sections/LeftSection';
 import RightSection from './sections/RightSection';
-import Container from './components/Container';
 
 
 const App = () => {
@@ -37,10 +36,3 @@ const App = () => {
 }
 
 export default App;
-
-
-// main div that will give the background
-// div with the hover effect
-// div that will contain the left and right container
-// left and right container
-// background: radial - gradient(600px at 1168px 227px, rgba(29, 78, 216, 0.15), transparent 80 %);
