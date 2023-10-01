@@ -24,7 +24,7 @@ const App = () => {
         <div className='max-w-[1500px] mx-auto w-full h-full px-[6%] md:px-[8%] lg:px-[10%] xl:px-[13%]'>
           <div className='h-full w-full'>
             <div className='h-full w-full flex flex-col lg:flex-row'>
-              <LeftSection activeSection={activeSection} />
+              <LeftSection activeSection={activeSection} setActiveSection={setActiveSection} />
               <RightSection setActiveSection={setActiveSection} />
             </div>
           </div>
