@@ -13,7 +13,7 @@ const LeftSection = ({ activeSection, setActiveSection }) => {
             return;
         }
         else if (targetSection !== 'about-section') {
-            const yOffset = window.innerHeight / 2;
+            const yOffset = (window.innerHeight / 4);
             window.scrollTo({
                 top: targetSection.offsetTop - yOffset,
                 behavior: 'smooth',
@@ -43,6 +43,10 @@ const LeftSection = ({ activeSection, setActiveSection }) => {
                     <div className="flex flex-row justify-center items-center gap-4 cursor-pointer group" onClick={() => handleClick("projects-section")}>
                         <span className={`h-[2px] ${activeSection === 'projects-section' ? "bg-[#E2E8F0] w-16" : "bg-[#64748B] w-8"} group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]`}></span>
                         <span className={`text-[12px] font-bold ${activeSection === 'projects-section' ? "text-slate-200" : "text-slate-400"} tracking-widest group-hover:text-slate-200 group-focus:text-slate-200`}>PROJECTS</span>
+                    </div>
+                    <div className="flex flex-row justify-center items-center gap-4 cursor-pointer group" onClick={() => handleClick("contact-section")}>
+                        <span className={`h-[2px] ${activeSection === 'contact-section' ? "bg-[#E2E8F0] w-16" : "bg-[#64748B] w-8"} group-hover:w-16 group-hover:bg-[#E2E8F0] transition-all duration-200 group-focus:w-16 group-focus:bg-[#E2E8F0]`}></span>
+                        <span className={`text-[12px] font-bold ${activeSection === 'contact-section' ? "text-slate-200" : "text-slate-400"} tracking-widest group-hover:text-slate-200 group-focus:text-slate-200`}>CONTACT ME</span>
                     </div>
                 </div>
                 {/* bottom social section */}

@@ -5,7 +5,7 @@ const mySkills = ["C++", "HTML", "CSS", "Tailwind CSS", "JavaScript", "TypeScrip
 const Skills = () => {
     return (
         <div id="skills-section" className="w-full flex flex-col gap-10 text-lg text-slate-400 tracking-wider">
-            <div><span className="text-slate-200 font-semibold"> Languages</span> & <span className="text-slate-200 font-semibold"> Technologies</span> I{`'`}m familiar with :</div>
+            <div><span className="text-slate-200 font-semibold">Programming Languages</span> & <span className="text-slate-200 font-semibold"> Technologies</span> I{`'`}m familiar with :</div>
             <div className="w-full flex flex-row flex-wrap gap-5">
                 {mySkills.map((skill) => (
                     <Button key={skill} text={skill} />
