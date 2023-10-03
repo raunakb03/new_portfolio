@@ -1,5 +1,5 @@
 import ProjectCard from '../components/Card'
-
+import { useState } from 'react'
 
 const data = [
     {
@@ -46,11 +46,13 @@ const data = [
 ]
 
 const Projects = () => {
+    const [currentHoverIndex, setCurrentHoverIndex] = useState(null);
+    const [currentHovering, setCurrentHovering] = useState(false);
     return (
         <div id="projects-section" className="w-full">
             <div className="w-full flex flex-col justify-center items-start gap-10">
                 {data.map((d, i) => (
-                    <ProjectCard key={i} data={d} />
+                    <ProjectCard key={i} index={i} data={d} currentHoverIndex={currentHoverIndex} setCurrentHoverIndex={setCurrentHoverIndex} currentHovering={currentHovering} setCurrentHovering={setCurrentHovering} />
                 ))}
             </div>
         </div>
